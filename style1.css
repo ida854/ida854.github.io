@@ -1,0 +1,108 @@
+h1 {
+  margin-bottom: 0;
+}
+h2 {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 20px;
+  font-size: 50px;
+}
+span {
+  color: purple;
+  font-size: 16px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: khaki;
+  overflow: hidden;
+}
+ul > li {
+  float: left;
+}
+.sid1 {
+  margin-top: 0;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: yellow;
+}
+img {
+  margin-top: 60px;
+  width: 40%;
+  height: 70%;
+}
+.left {
+  float: left;
+  width: 50%;
+  margin: 10px;
+}
+.right {
+  float: right;
+  width: 50%;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.italic {
+  font-style: italic;
+  color: black;
+}
+
+.bild > img {
+  width: 180px;
+  height: 200px;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+  animation-name: lo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes lo {
+  from {
+    width: 30px;
+    height: 30px;
+  }
+  to {
+    width: 35px;
+    height: 35px;
+  }
+}
+.cen {
+  text-align: center;
+}
+#column2 {
+  columns: 2;
+}
+
+article {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul.pages {
+  margin: 0;
+  padding: 0;
+}
+ul.pages li {
+  display: inline;
+}
+ul.pages li a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+ul.pages li a.active {
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+}
