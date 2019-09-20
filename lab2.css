@@ -1,0 +1,252 @@
+body {
+  font-size: 1em;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.gallery {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(192, 139, 99);
+}
+span {
+  color: red;
+}
+.anim {
+  animation: colorfull 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorfull {
+  0% {
+    color: red;
+  }
+  25% {
+    color: orange;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  100% {
+    color: purple;
+  }
+}
+
+h2 {
+  color: green;
+}
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  padding-top: 2rem;
+  padding-bottom: 2em;
+  background-color: white;
+  align-items: center;
+  max-width: 100%;
+}
+
+ul.container1 li a {
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+ul.container1 li:last-child:before {
+  content: "\1F6D2";
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 4% 96%;
+  grid-row-gap: 2em;
+}
+ul.container1 li a:hover {
+  color: crimson;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.flex-container3 {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4em;
+}
+.flex-item3 {
+  width: 60%;
+}
+.paint img {
+  max-width: 100%;
+  height: auto;
+}
+.paint {
+  border: 1em solid lightpink;
+}
+.paint:hover {
+  border: 1em solid crimson;
+}
+.pa {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media all and (max-width: 25em) {
+  body {
+    color: white;
+    background: black;
+  }
+  .container1 {
+    display: none;
+  }
+  .ham {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 2rem;
+    padding-bottom: 2em;
+    background-color: white;
+    align-items: center;
+    max-width: 100%;
+  }
+  .btn {
+    background-color: darkgrey;
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    margin-right: 5em;
+    margin-left: 0em;
+  }
+
+  .drop {
+    position: relative;
+    display: inline-block;
+  }
+  .cont {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 16em;
+    padding: 3em;
+    box-shadow: 0px 8px 16px 0px black;
+  }
+
+  .cont a {
+    color: black;
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+  }
+  .cont a:hover {
+    background-color: white;
+  }
+  .drop:hover .cont {
+    display: block;
+  }
+  .drop:hover .btn {
+    background-color: brown;
+  }
+
+  section {
+    padding-top: 2%;
+  }
+  .produkter {
+    display: grid;
+    margin-top: 1em;
+    justify-content: center;
+  }
+  .longinfo {
+    display: none;
+  }
+  .id3 {
+    display: grid;
+    justify-content: center;
+    margin-top: 1em;
+  }
+}
+@media all and (min-width: 25.1em) and (max-width: 30em) {
+  body {
+    background: rgb(200, 159, 107);
+    color: black;
+  }
+  .ham {
+    display: none;
+  }
+  .produkter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 1em;
+    row-gap: 1em;
+  }
+
+  .longinfo {
+    display: none;
+  }
+  .id3 {
+    display: grid;
+    justify-content: center;
+    margin-top: 2em;
+  }
+}
+@media all and (min-width: 30.1em) and (max-width: 65.625em) {
+  body {
+    background-color: beige;
+    color: black;
+  }
+  .ham {
+    display: none;
+  }
+  .produkter {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+    padding-top: 3em;
+  }
+  .id3 {
+    display: grid;
+    justify-content: center;
+    margin-top: 3em;
+  }
+}
+@media all and (min-width: 65.626em) and (orientation: landscape) {
+  body {
+    background: white;
+    color: black;
+  }
+  .ham {
+    display: none;
+  }
+  .produkter {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em;
+    padding-top: 4em;
+  }
+  .id3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+    align-items: stretch;
+  }
+}
